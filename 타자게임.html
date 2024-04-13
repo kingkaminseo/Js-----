@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taza game</title>
+    <link rel="stylesheet" href="타자게임.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+</style>
+    
+<body>
+    <div class="stick">
+        <div id="greenbar"></div>
+        <div id="firstscril"></div>
+        <div id="secondscril"></div>
+        <div id="trirdscril"></div>
+        <div id="lastscril"></div>
+    </div>
+<div id="alling">
+
+    <div class="maindiv">
+        <h1>
+            개쩌는 타자게임
+        </h1>
+        <form>
+                <div class="info">
+                    <h3>회원가입</h3>
+                    <p>* 아이디와 비번을 일치하면 안됌</p>
+                </div>
+                    <div class="all">
+                        <div class="first">
+                            <input type="email" id='ID' onchange='printName()' placeholder="Email" autocomplete="off"/>
+                            <div id='result'></div>
+                        </div>
+        
+                        <div class="second">
+                            <input type="password" id='password' onchange='printpassword()' placeholder="Password"/>
+                            <div id='result2'></div>
+                        </div>
+                    </div>
+                <button type="reset" onclick="succeced()">회원가입</button>
+                <div id="succ"></div>
+        </form>
+    </div>
+        
+
+    <div class="maindiv">
+        <h1>
+            개쩌는 타자게임
+        </h1>
+        <form>
+            <h2>로그인</h2>
+            <p>*회원가입 후 로그인 하세요.</p>
+            <div class="all">
+                <div class="first">
+                    <input type="email" id='loginID' onchange='printName2()' placeholder="Email"/>
+                    <div id='result3'></div>
+                </div>
+    
+                <div class="second">
+                    <input type="password" id='loginpassword' onchange='printpassword2()' placeholder="Password"/>
+                    <div id='result4'></div>
+                </div>
+            </div>
+            <button type="reset" onclick="loginsucceced()">로그인</button>
+            <div id="login-cuss"></div>
+        </form>
+    </div>
+
+    <div class="maindiv" id="help">
+        <h1>Choose one</h1>
+        <div class="choosediv">
+            <div class="choosefirstbox">
+                <a href="alone.html">
+                    <h2 class="choosesel">alone</h2>
+                    <img src="persen.png" width="50%">
+                </a>
+            </div>
+            <div class="choosesecondbox">
+                <a href="#">
+                    <h2 class="choosesel">with friend</h2>
+                    
+                    <img src="manypeople.png" width="80%">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="safety">
+
+    </div>
+</div>
+
+</body>
+<script src="타자게임.js"></script>
+</html>

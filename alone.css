@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(rgb(190,158,207),rgb(212,166,125));
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    top: 2%;
+    width: 60%;
+    margin-left: 20%;
+    border-top: 5px solid black;
+    background-color: rgba(255, 255, 255, 0.551);
+    border-radius: 50px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+}
+
+input {
+    position: absolute;
+    top: 90%;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 25px;
+    outline: none;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5%;
+    z-index: 999;
+}
+
+#timer {
+    position: fixed;
+    font-size: 700px;
+    left: 25%;
+
+    font-weight: 800;
+    letter-spacing: 70px;
+    color: rgba(73, 73, 73, 0.544);
+    z-index:    1;
+    text-align: center;
+}
+
+#maindiv {
+    width: 90%;
+    background-color: white;
+    margin-left: 5%;
+    height: 60%;
+    margin-top: 4%;
+    border-radius: 50px;
+}
+
+.Flash {
+    animation: 10s Fl  ;
+}
+
+@keyframes Fl {
+    0% {background-color: white;}
+    10% {background-color: white;}
+    20% {background-color: white;}
+    30% {background-color: white;}
+    39.9% {background-color: white;}
+    40% {background-color: red;}
+    43% {background-color: red;}
+    43.1% {background-color: white;}
+    45% {background-color: white;}
+    45.1% {background-color: red;}
+    49% {background-color: red;}
+    49.1% {background-color: white;}
+    50% {background-color: white;}
+    60% {background-color: white;}
+    69.9% {background-color: white;}
+    70% {background-color: black;}
+    75% {background-color: black;}
+    
+    80% {background-color: white;}
+    90% {background-color: black;}
+    100% {background-color: white;}
+}

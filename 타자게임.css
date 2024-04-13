@@ -1,0 +1,337 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);
+    width: 100%; /* 너비 값 수정 */
+    height: 100px; /* 높이 값 수정 */
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px ;
+    margin-bottom: 30px;
+    border-bottom:1px solid rgb(65, 65, 65) ;
+}
+
+.maindiv {
+    border-radius: 15px;
+    position: absolute;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.56);
+    /* background-color: white; */
+    width: 35%;
+    padding: 50px;
+    box-shadow: 0px 10px 40px rgba(44, 44, 44, 0.375);
+    backface-visibility: hidden;
+}
+
+.maindiv:nth-child(2) {
+    left: 150%;
+}
+
+input {
+    background-color: #766bcc00;
+    border: 1px solid gray;
+    width: 90%;
+    font-size: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
+    border-radius: 15px;
+    padding-left: 40px;
+    outline: none;
+}
+
+
+
+input:nth-child(1) {
+    margin-bottom: 4%;
+}
+
+p {
+    margin-bottom: 8%;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(90deg, #C7C5F4, #776BCC);
+        width: 0px;
+    }
+    .maindiv {
+        left: 20px;
+        width: 250px;
+    }
+
+    .maindiv:nth-child(2) {
+        left: 20px;
+        width: 250px;
+        position: relative;
+        top: 800px;
+    }
+
+    #help {
+        width: 250px;
+        position: relative;
+        top: 1400px;
+        left: 20px;
+        
+    }
+    body     {
+        overflow-x: hidden;
+    }
+
+    #alling {
+        display: flex;
+        flex-direction: column;
+    }
+    .safety {
+        padding: 100px;
+        position: relative;
+        top: 1500px;
+    }
+} */
+@media only screen and (max-width: 600px) {
+    body {
+      background: linear-gradient(90deg, #C7C5F4, #776BCC);
+      width: 0px;
+    }
+    .maindiv {
+      left: 20px;
+      width: 250px;
+    }
+    .maindiv:nth-child(2) {
+      left: 20px;
+      width: 250px;
+      position: relative;
+      top: 800px;
+    }
+    #help {
+      width: 250px;
+      position: relative;
+      top: 1400px;
+      left: 20px;
+    }
+    body {
+      overflow-x: hidden;
+    }
+    #alling {
+      display: flex;
+      flex-direction: column;
+    }
+    .safety {
+      padding: 100px;
+      position: relative;
+      top: 1500px;
+    }
+
+    @keyframes phone {
+        0% {bottom: 0;}
+        100% {bottom: 1000px;}
+    }
+
+    .phonemove {
+        position: relative;
+        animation: phone 1s linear forwards;
+    }
+  }
+button {
+    float: right;
+    margin-top: 10px;
+    background-color: rgb(49, 108, 244);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+button:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    background-color: rgb(43, 94, 215);
+}
+
+input::placeholder {
+    font-style: italic;
+}
+.info {
+    margin-left: 30px;
+}
+
+form {
+    margin-left: 0px;
+}
+/*ㅁㄴㅇㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ */
+
+#alling {
+    position: relative;
+    top: 190%;
+    
+  }
+
+.animatclass {
+    animation: move 0.7s ease-out forwards 0.5s;
+}
+
+@keyframes move {
+    0% {left: 0;}
+    100% {left: -120%;}
+}
+
+.animatclass2 {
+    animation: move2 0.7s ease-out forwards;
+}
+
+@keyframes move2 {
+    0% {left: -120%;}
+    100% {left: -210%;}
+}
+
+body     {
+    overflow-x: hidden;
+}
+  
+/*11111qqaasfhasfhjashdfkjhsdfkjhaskldfjhaksljfd*/
+
+.maindiv:nth-child(3) {
+    left: 240%;
+}
+
+.choosefirstbox {
+    flex: 1;
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.choosesecondbox {
+    flex: 1;
+    text-align: center;
+    border-left: 1px solid gray;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.choosediv {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Patua One', cursive;
+}
+
+.choosesel {
+    padding-bottom: 50px;
+}
+
+
+
+.choosefirstbox:hover > a {
+    color: rgb(73, 107, 244);
+    text-decoration: underline;
+}
+
+.choosesecondbox:hover > a {
+    color: rgb(73, 107, 244);
+    text-decoration: underline;
+}
+
+.stick {
+    left: 10%;
+    text-align: center;
+    width: 80%;
+    height: 20px;
+    position: fixed;
+    top: 7%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.441);
+}
+
+#greenbar {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(84, 203, 145);
+    border-radius: 15px;
+}
+
+.greenbaroship {
+    animation: greenbar50 0.7s ease-in-out forwards 0.5s;
+}
+
+@keyframes greenbar50 {
+    from {width: 10%;}
+    to {width: 40%;}
+}
+
+@keyframes greenbar80 {
+    from {width: 40%;}
+    to {width: 90%;}
+}
+
+.greenbaroship2 {
+    animation: greenbar80 0.7s ease-in-out forwards;
+}
+
+#firstscril {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.441);
+    position: absolute;
+    left: 9%;
+    border-radius: 5px;
+    background-color: rgb(84, 203, 145);
+}
+
+#secondscril {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 39%;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.441); 
+}
+
+.secondscril1 {
+    transition-delay: 1.2s;
+    background-color: rgb(84, 203, 145);
+}
+
+#trirdscril {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 89%;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.441);
+}
+
+.tridsscril1 {
+    transition-delay: 0.7s;
+    background-color: rgb(84, 203, 145);
+}
+
+#lastscril {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 99%;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.441);
+    background-color: rgba(0, 0, 0, 0.441);
+}
